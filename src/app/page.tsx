@@ -49,7 +49,7 @@ export default function Home() {
             <div className="order-2 md:order-1 relative h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl">
               {/* Replace with actual image of Saryu if available */}
               <Image
-                src="/logo.jpg"
+                src="/logo.svg"
                 alt="Saryu Chitrakar"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

@@ -18,6 +18,9 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "MI Tax Advisor | Expert Tax Planning & Preparation",
   description: "Saryu Chitrakar, Enrolled Agent (EA). Proactive tax planning and preparation for maximum value and peace of mind.",
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({

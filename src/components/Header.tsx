@@ -29,7 +29,7 @@ const Header = () => {
                 <Link href="/" className="flex items-center gap-3 group">
                     <div className="relative w-10 h-10 overflow-hidden rounded-full border border-[var(--border)] shadow-md transition-transform group-hover:scale-105">
                         <Image
-                            src="/logo.jpg"
+                            src="/logo.svg"
                             alt="MI Tax Advisor Logo"
                             fill
                             sizes="40px"
