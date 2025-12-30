@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { prefixPath } from "@/lib/utils";
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +30,7 @@ const Header = () => {
                 <Link href="/" className="flex items-center gap-3 group">
                     <div className="relative w-10 h-10 overflow-hidden rounded-full border border-[var(--border)] shadow-md transition-transform group-hover:scale-105">
                         <Image
-                            src="/logo.svg"
+                            src={prefixPath("/logo.svg")}
                             alt="MI Tax Advisor Logo"
                             fill
                             sizes="40px"

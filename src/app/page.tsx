@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
 import ContactSection from "@/components/ContactSection";
 import Image from "next/image";
+import { prefixPath } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -49,7 +50,7 @@ export default function Home() {
             <div className="order-2 md:order-1 relative h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl">
               {/* Replace with actual image of Saryu if available */}
               <Image
-                src="/logo.svg"
+                src={prefixPath("/logo.svg")}
                 alt="Saryu Chitrakar"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

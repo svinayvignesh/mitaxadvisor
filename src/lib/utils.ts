@@ -4,3 +4,8 @@ import { twMerge } from "tailwind-merge"
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs))
 }
+
+export const prefixPath = (path: string) => {
+    const basePath = "/mitaxadvisor";
+    return `${basePath}${path}`;
+};

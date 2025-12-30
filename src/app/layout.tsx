@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { prefixPath } from "@/lib/utils";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   title: "MI Tax Advisor | Expert Tax Planning & Preparation",
   description: "Saryu Chitrakar, Enrolled Agent (EA). Proactive tax planning and preparation for maximum value and peace of mind.",
   icons: {
-    icon: "/logo.svg",
+    icon: prefixPath("/logo.svg"),
   },
 };
 
