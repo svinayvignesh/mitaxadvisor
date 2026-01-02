@@ -6,6 +6,5 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const prefixPath = (path: string) => {
-    const basePath = "/mitaxadvisor";
-    return `${basePath}${path}`;
+    return path;
 };

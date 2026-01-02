@@ -46,21 +46,21 @@ export default function Home() {
 
         {/* About Section */}
         <section id="about" className="py-24 px-6 bg-[var(--muted)] dark:bg-slate-900/50">
-          <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 relative h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl">
-              {/* Replace with actual image of Saryu if available */}
-              <Image
-                src={prefixPath("/logo.svg")}
-                alt="Saryu Chitrakar"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
-                <div>
-                  <h3 className="text-2xl font-bold text-white font-serif">Saryu Chitrakar</h3>
-                  <p className="text-[var(--secondary)] font-medium">Enrolled Agent (EA) & Founder</p>
-                </div>
+          <div className="container mx-auto grid md:grid-cols-2 gap-6 items-center">
+            <div className="order-2 md:order-1 flex flex-col items-center text-center space-y-4">
+              <div className="relative aspect-[3/4] max-w-xs md:max-w-sm mx-auto w-full rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+                {/* Replace with actual image of Saryu if available */}
+                <Image
+                  src={prefixPath("/Saryu.jpeg")}
+                  alt="Saryu Chitrakar"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-top hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-2xl font-bold text-[var(--foreground)] font-serif">Saryu Chitrakar</h3>
+                <p className="text-[var(--secondary)] font-medium text-lg">Enrolled Agent (EA) & Founder</p>
               </div>
             </div>
 
