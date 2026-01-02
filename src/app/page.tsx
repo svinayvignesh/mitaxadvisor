@@ -15,7 +15,7 @@ export default function Home() {
         <Hero />
 
         {/* Why Choose Me Section */}
-        <section id="services" className="py-24 px-6 bg-[var(--background)]">
+        <section id="why-choose-me" className="py-24 px-6 bg-[var(--background)]">
           <div className="container mx-auto">
             <div className="text-center mb-16 max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[var(--foreground)] tracking-tight font-serif">Why Choose Me?</h2>

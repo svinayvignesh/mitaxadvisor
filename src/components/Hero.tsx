@@ -43,7 +43,7 @@ const Hero = () => {
                             </div>
                             <div className="text-right">
                                 <div className="text-[0.6rem] font-bold">OMB No. 1545-0074</div>
-                                <div className="text-xs font-bold mt-1">2024</div>
+                                <div className="text-xs font-bold mt-1">2026</div>
                             </div>
                         </div>
 

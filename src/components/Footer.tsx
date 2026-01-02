@@ -15,7 +15,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    <div>
+                    <div id="services">
                         <h4 className="font-semibold mb-4 text-[var(--secondary)]">Services</h4>
                         <ul className="space-y-2 opacity-80">
                             <li>Tax Planning</li>
@@ -28,18 +28,14 @@ const Footer = () => {
                     <div>
                         <h4 className="font-semibold mb-4 text-[var(--secondary)]">Connect</h4>
                         <ul className="space-y-2 opacity-80">
-                            <li><a href="mailto:contact@mitaxadvisor.com" className="hover:text-[var(--secondary)] transition-colors">Contact Me</a></li>
+                            <li><Link href="#contact" className="hover:text-[var(--secondary)] transition-colors">Contact Me</Link></li>
                             <li><Link href="#about" className="hover:text-[var(--secondary)] transition-colors">About Saryu</Link></li>
                         </ul>
                     </div>
                 </div>
 
-                <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm opacity-60">
+                <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-center items-center text-sm opacity-60">
                     <p>&copy; {new Date().getFullYear()} MI Tax Advisor. All rights reserved.</p>
-                    <div className="flex gap-4 mt-4 md:mt-0">
-                        <Link href="#" className="hover:text-[var(--secondary)]">Privacy Policy</Link>
-                        <Link href="#" className="hover:text-[var(--secondary)]">Terms of Service</Link>
-                    </div>
                 </div>
             </div>
         </footer>

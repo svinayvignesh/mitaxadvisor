@@ -44,13 +44,18 @@ const Header = () => {
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-6">
-                    {["Services", "About", "Contact"].map((item) => (
+                    {[
+                        { name: "Why Choose Me", href: "#why-choose-me" },
+                        { name: "About", href: "#about" },
+                        { name: "Contact", href: "#contact" },
+                        { name: "Services", href: "#services" }
+                    ].map((item) => (
                         <Link
-                            key={item}
-                            href={`#${item.toLowerCase()}`}
+                            key={item.name}
+                            href={item.href}
                             className="text-sm font-medium hover:text-[var(--secondary)] transition-colors text-[var(--muted-foreground)] hover:text-[var(--foreground)]"
                         >
-                            {item}
+                            {item.name}
                         </Link>
                     ))}
                     <div className="flex items-center gap-2">
@@ -83,14 +88,19 @@ const Header = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden absolute top-full left-0 right-0 bg-[var(--background)] border-b border-[var(--border)] p-4 shadow-xl animate-in slide-in-from-top-2">
                     <nav className="flex flex-col gap-4">
-                        {["Services", "About", "Contact"].map((item) => (
+                        {[
+                            { name: "Why Choose Me", href: "#why-choose-me" },
+                            { name: "About", href: "#about" },
+                            { name: "Contact", href: "#contact" },
+                            { name: "Services", href: "#services" }
+                        ].map((item) => (
                             <Link
-                                key={item}
-                                href={`#${item.toLowerCase()}`}
+                                key={item.name}
+                                href={item.href}
                                 className="text-lg font-medium text-[var(--foreground)] hover:text-[var(--secondary)]"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
-                                {item}
+                                {item.name}
                             </Link>
                         ))}
                         <Button asChild className="w-full">
