@@ -31,7 +31,7 @@ export async function POST(request: Request) {
       from: 'Contact Form <saryu@mitaxadvisor.com>',
       to: ['svinayvignesh@gmail.com'],
       replyTo: email,
-      subject: `New Contact Form Submission from ${name}`,
+      subject: `${name} - MI Tax Advisor`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     });
 
@@ -44,7 +44,7 @@ export async function POST(request: Request) {
       from: 'Contact Form <saryu@mitaxadvisor.com>',
       to: [email],
       subject: 'Thank you for contacting MI Tax Advisor',
-      text: `Hi ${name},\n\nThanks for reaching out! We will get back to you as soon as possible.\n\nBest regards,\nMI Tax Advisor Team`,
+      text: `Hi ${name},\n\nThanks for reaching out! We will get back to you as soon as possible.\n\nHere is a copy of your message:\n${message}\n\nBest regards,\nMI Tax Advisor Team`,
     });
 
     // We don't fail the request if the auto-reply fails, but we could log it.
