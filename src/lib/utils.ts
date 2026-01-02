@@ -6,5 +6,6 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const prefixPath = (path: string) => {
-    return path;
+    const basePath = process.env.NODE_ENV === 'production' ? "/mitaxadvisor" : "";
+    return `${basePath}${path}`;
 };
